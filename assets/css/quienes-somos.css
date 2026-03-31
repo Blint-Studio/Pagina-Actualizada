@@ -1,0 +1,189 @@
+/**
+ * quienes-somos.css
+ * Estilos de componentes propios de la sección "Quiénes Somos" y Autoridades.
+ * Extraídos del bloque <style> inline de pages/quienes-somos/index.html.
+ *
+ * Se cargan vía <link> en quienes-somos/index.html y son copiados automáticamente
+ * al <head> del documento principal cuando la sección es inyectada (injectSection).
+ */
+
+/* ─── Variables de marca ──────────────────────────────────────────────────── */
+:root {
+  --brandBlue:       #001F71;
+  --brandCyan:       #5CBFDF;
+  --brandCoral:      #FF5A36;
+  --modalBorderSize: 4px;
+  --modalRadius:     1.5rem;
+}
+
+/* ─── Layout de la sección ────────────────────────────────────────────────── */
+.qs-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* ─── Grid de valores (responsive) ───────────────────────────────────────── */
+.values-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 640px)  { .values-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .values-grid { grid-template-columns: repeat(3, 1fr); } }
+
+/* ─── Grid de autoridades (responsive) ───────────────────────────────────── */
+.auth-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px)  { .auth-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .auth-grid { grid-template-columns: repeat(3, 1fr); } }
+
+/* ─── Tarjeta de valor ────────────────────────────────────────────────────── */
+.card {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+  border: 1px solid rgba(0, 0, 0, .04);
+  border-radius: 1rem;
+  background: #fff;
+  transition: .3s ease;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .15);
+}
+
+/* ─── Tarjeta de autoridad ────────────────────────────────────────────────── */
+.authority-card {
+  background: #fff;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, .1);
+  border: 1px solid rgba(0, 0, 0, .05);
+  transition: .3s ease;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.authority-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, .18);
+}
+
+.authority-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 1.25rem;
+  margin: 0 auto 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.authority-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.authority-social  { margin: 1.25rem 0; }
+.authority-button  { margin-top: auto; }
+
+/* ─── Botones con gradiente ───────────────────────────────────────────────── */
+.btn {
+  color: #fff;
+  font-weight: 600;
+  padding: .75rem 1.5rem;
+  border-radius: .75rem;
+  transition: .25s ease;
+  border: 0;
+  width: 100%;
+  font-size: .875rem;
+  cursor: pointer;
+}
+.btn:hover { transform: translateY(-2px); }
+
+.btn-gradient-coral {
+  background: linear-gradient(135deg, #FF5A36, #FF7A5C);
+  box-shadow: 0 8px 20px rgba(255, 90, 54, .4);
+}
+.btn-gradient-coral-cyan {
+  background: linear-gradient(135deg, #FF5A36, #5CBFDF);
+  box-shadow: 0 8px 20px rgba(92, 191, 223, .4);
+}
+.btn-gradient-coral-blue {
+  background: linear-gradient(135deg, #FF5A36, #001F71);
+  box-shadow: 0 8px 20px rgba(0, 31, 113, .4);
+}
+.btn-gradient-coral-gray {
+  background: linear-gradient(135deg, #FF5A36, #6B7280);
+  box-shadow: 0 8px 20px rgba(107, 114, 128, .4);
+}
+
+/* ─── Links de redes sociales ─────────────────────────────────────────────── */
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  color: #969696;
+  text-decoration: none;
+  transition: .25s ease;
+  background: rgba(150, 150, 150, .1);
+}
+.social-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+  color: var(--brandBlue);
+  background: rgba(0, 31, 113, .1);
+}
+
+/* ─── Borde degradé de los modales de autoridades ────────────────────────── */
+.modal-outer {
+  position: relative;
+  z-index: 0;
+  border-radius: var(--modalRadius);
+}
+.modal-outer::before {
+  content: "";
+  position: absolute;
+  inset: calc(-1 * var(--modalBorderSize));
+  border-radius: calc(var(--modalRadius) + var(--modalBorderSize));
+  background: linear-gradient(135deg,
+    var(--brandBlue)  0%,
+    var(--brandCyan)  50%,
+    var(--brandCoral) 100%);
+  z-index: -1;
+  pointer-events: none;
+  filter: saturate(1.1);
+}
+.modal-outer > .modal-card {
+  position: relative;
+  z-index: 1;
+  border-radius: var(--modalRadius);
+}
+
+/* ─── Dark mode overrides ─────────────────────────────────────────────────── */
+html.dark .card,
+html.dark .authority-card {
+  background: #1f2937;
+  border-color: rgba(255, 255, 255, 0.08);
+  color: #e5e7eb;
+}
+html.dark .authority-card h4       { color: #5CBFDF; }
+html.dark .authority-avatar         { box-shadow: inset 0 0 0 2px rgba(255,255,255,0.12); }
+html.dark .authority-social .social-link {
+  background: rgba(255,255,255,0.08);
+  color: #cbd5e1;
+}
+html.dark .authority-social .social-link:hover {
+  background: rgba(92,191,223,0.15);
+  color: #5CBFDF;
+}

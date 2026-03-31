@@ -1,0 +1,32 @@
+<!-- HEADER LAYOUT PARTIAL -->
+<header class="fixed top-0 left-0 right-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/90 border-b border-black/5 w-full">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="flex h-16 items-center justify-between">
+      <a href="{root_rel}index.html" class="flex items-center gap-2 font-extrabold text-lg transition-colors duration-200 hover:text-brandCoral">
+        <img src="{root_rel}assets/img/logo.png" alt="Juventud Frente Cívico" class="h-10 w-auto" loading="lazy">
+        <span class="hidden sm:block">Juventud Frente Cívico</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 font-medium">
+        <a href="{root_rel}index.html#landing-quienes" data-nav="quienes" class="transition-colors duration-200 hover:text-brandCoral nav-link">Quiénes somos</a>
+        <a href="{root_rel}index.html#landing-secretarias" data-nav="secretarias" class="transition-colors duration-200 hover:text-brandCoral nav-link">Secretarías</a>
+        <a href="{root_rel}index.html#landing-sumate" data-nav="sumate" class="transition-colors duration-200 hover:text-brandCoral nav-link">Sumate</a>
+      </nav>
+      <div class="hidden md:flex items-center gap-3">
+        <a href="{root_rel}index.html#landing-sumate" class="inline-flex items-center justify-center gap-2 rounded-full bg-brandCoral px-5 py-3 text-white font-semibold shadow-soft transition-all duration-200 hover:brightness-110 hover:shadow-lg hover:scale-105 nav-link">Sumate al cambio</a>
+      </div>
+      <button id="navToggle" class="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-md border border-black/10" aria-label="Abrir menú">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="md:hidden hidden border-t border-black/5">
+    <div class="mx-auto max-w-7xl px-4 py-3 sm:px-6">
+      <nav class="grid gap-2 font-medium">
+        <a href="{root_rel}index.html#landing-quienes" data-nav="quienes" class="py-2 transition-colors duration-200 hover:text-brandCoral nav-link">Quiénes somos</a>
+        <a href="{root_rel}index.html#landing-secretarias" data-nav="secretarias" class="py-2 transition-colors duration-200 hover:text-brandCoral nav-link">Secretarías</a>
+        <a href="{root_rel}index.html#landing-sumate" data-nav="sumate" class="py-2 transition-colors duration-200 hover:text-brandCoral nav-link">Sumate</a>
+      </nav>
+    </div>
+  </div>
+</header>

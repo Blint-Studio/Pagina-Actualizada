@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JFC · Secretarías</title>
+  <meta name="description" content="Juventud del Frente Cívico · Construyendo el futuro de Córdoba. Participá · Proponé · Hacé que pase" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../output.css">
+  
+  <style>
+    /* Efecto 3D sutil para tarjetas de secretarías */
+    .secretaria-card {
+      transition: all 0.3s ease;
+      transform-style: preserve-3d;
+      position: relative;
+    }
+
+    .secretaria-card:hover {
+      transform: translateY(-8px) rotateX(5deg);
+    }
+
+    /* Sombreado de color alrededor del perímetro para cada secretaría */
+    .secretaria-comunicacion:hover {
+      box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.08),
+        0 0 0 3px rgba(92, 191, 223, 0.4),
+        0 0 20px rgba(92, 191, 223, 0.3);
+    }
+
+    .secretaria-accion-digital:hover {
+      box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.08),
+        0 0 0 3px rgba(255, 90, 54, 0.4),
+        0 0 20px rgba(255, 90, 54, 0.3);
+    }
+
+    .secretaria-accion-social:hover {
+      box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.08),
+        0 0 0 3px rgba(92, 191, 223, 0.4),
+        0 0 20px rgba(92, 191, 223, 0.3);
+    }
+
+    .secretaria-estudiantil:hover {
+      box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.08),
+        0 0 0 3px rgba(0, 31, 113, 0.5),
+        0 0 20px rgba(0, 31, 113, 0.4);
+    }
+
+    .secretaria-formacion:hover {
+      box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.08),
+        0 0 0 3px rgba(150, 150, 150, 0.5),
+        0 0 20px rgba(150, 150, 150, 0.4);
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 antialiased" data-root="../../">
+  <div id="app-header"></div>
+
+  <section class="py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-graySoft to-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <p class="text-sm tracking-widest font-bold uppercase text-brandCoral">Organización y Acción</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-brandBlue">NUESTRAS <span class="text-brandCyan">SECRETARÍAS</span></h2>
+        <p class="mt-2 text-gray-600">Áreas especializadas para lograr impacto real en la vida de los jóvenes.</p>
+      </div>
+
+      <!-- Primera fila: 3 secretarías -->
+      <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        
+    <article class="secretaria-card secretaria-comunicacion rounded-2xl bg-white shadow-soft ring-1 ring-black/[0.04] overflow-hidden">
+      <div class="h-28 bg-gradient-to-r from-brandCyan/10 via-white to-brandBlue/10"></div>
+      <div class="p-6">
+        <span class="inline-flex items-center rounded-full px-2.5 py-1 text-xs font-medium bg-brandCyan/15 text-brandBlue">Comunicación</span>
+        <h3 class="mt-2 font-semibold text-brandBlue">Secretaría de Comunicación</h3>
+        <p class="mt-1 text-sm text-gray-600">Imagen, redes sociales y campañas con datos.</p>
+        <a href="{root_rel}pages/secretarias/comunicacion.html" class="mt-4 inline-flex text-sm font-semibold text-brandBlue hover:text-brandCoral hover:underline transition-colors duration-200">→ Conocer Secretaría</a>
+      </div>
+    </article>
+    
+
+    <article class="secretaria-card secretaria-accion-digital rounded-2xl bg-white shadow-soft ring-1 ring-black/[0.04] overflow-hidden">
+      <div class="h-28 bg-gradient-to-r from-brandBlue/10 via-white to-brandCoral/10"></div>
+      <div class="p-6">
+        <span class="inline-flex items-center rounded-full px-2.5 py-1 text-xs font-medium bg-brandCoral/10 text-brandCoral">Digitalización e Innovación</span>
+        <h3 class="mt-2 font-semibold text-brandBlue">Secretaría de Digitalización e Innovación</h3>
+        <p class="mt-1 text-sm text-gray-600">Estrategias digitales, tecnológicas e innovación.</p>
+        <a href="{root_rel}pages/secretarias/accion-digital.html" class="mt-4 inline-flex text-sm font-semibold text-brandBlue hover:text-brandCoral hover:underline transition-colors duration-200">→ Conocer Secretaría</a>
+      </div>
+    </article>
+    
+
+    <article class="secretaria-card secretaria-accion-social rounded-2xl bg-white shadow-soft ring-1 ring-black/[0.04] overflow-hidden">
+      <div class="h-28 bg-gradient-to-r from-brandCoral/10 via-white to-brandBlue/10"></div>
+      <div class="p-6">
+        <span class="inline-flex items-center rounded-full px-2.5 py-1 text-xs font-medium bg-brandCoral/15 text-brandCoral">Acción Social</span>
+        <h3 class="mt-2 font-semibold text-brandBlue">Secretaría de Acción Social</h3>
+        <p class="mt-1 text-sm text-gray-600">Proyectos de impacto social y voluntariado.</p>
+        <a href="{root_rel}pages/secretarias/accion-social.html" class="mt-4 inline-flex text-sm font-semibold text-brandBlue hover:text-brandCoral hover:underline transition-colors duration-200">→ Conocer Secretaría</a>
+      </div>
+    </article>
+    
+      </div>
+
+      <!-- Segunda fila: 2 secretarías centradas -->
+      <div class="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-2 max-w-3xl mx-auto">
+    
+    <article class="secretaria-card secretaria-estudiantil rounded-2xl bg-white shadow-soft ring-1 ring-black/[0.04] overflow-hidden">
+      <div class="h-28 bg-gradient-to-r from-brandBlue/10 via-white to-brandCyan/10"></div>
+      <div class="p-6">
+        <span class="inline-flex items-center rounded-full px-2.5 py-1 text-xs font-medium bg-purple-500/10 text-purple-600">Estudiantil</span>
+        <h3 class="mt-2 font-semibold text-brandBlue">Secretaría Estudiantil</h3>
+        <p class="mt-1 text-sm text-gray-600">Universidades, terciarios y centros de formación.</p>
+        <a href="{root_rel}pages/secretarias/estudiantil.html" class="mt-4 inline-flex text-sm font-semibold text-brandBlue hover:text-brandCoral hover:underline transition-colors duration-200">→ Conocer Secretaría</a>
+      </div>
+    </article>
+    
+
+    <article class="secretaria-card secretaria-formacion rounded-2xl bg-white shadow-soft ring-1 ring-black/[0.04] overflow-hidden">
+      <div class="h-28 bg-gradient-to-r from-brandCyan/10 via-white to-brandCoral/10"></div>
+      <div class="p-6">
+        <span class="inline-flex items-center rounded-full px-2.5 py-1 text-xs font-medium bg-indigo-500/10 text-indigo-600">Formación</span>
+        <h3 class="mt-2 font-semibold text-brandBlue">Secretaría de Formación</h3>
+        <p class="mt-1 text-sm text-gray-600">Capacitaciones en liderazgo y políticas públicas.</p>
+        <a href="{root_rel}pages/secretarias/formacion.html" class="mt-4 inline-flex text-sm font-semibold text-brandBlue hover:text-brandCoral hover:underline transition-colors duration-200">→ Conocer Secretaría</a>
+      </div>
+    </article>
+    
+      </div>
+
+      <div class="mt-10 rounded-2xl bg-white shadow-soft ring-1 ring-black/[0.04] p-6 md:p-8">
+        <div class="grid gap-6 text-center sm:grid-cols-2 lg:grid-cols-4">
+          <div><div class="text-3xl md:text-4xl font-extrabold text-brandBlue">5</div><p class="mt-1 text-sm text-gray-600">Secretarías Activas</p></div>
+          <div><div class="text-3xl md:text-4xl font-extrabold text-brandBlue">500+</div><p class="mt-1 text-sm text-gray-600">Jóvenes Activos</p></div>
+          <div><div class="text-3xl md:text-4xl font-extrabold text-brandBlue">35+</div><p class="mt-1 text-sm text-gray-600">Proyectos Activos</p></div>
+          <div><div class="text-3xl md:text-4xl font-extrabold text-brandBlue">50+</div><p class="mt-1 text-sm text-gray-600">Localidades con Presencia</p></div>
+        </div>
+      </div>
+
+      <div class="mt-10 text-center">
+        <p class="text-gray-700 font-semibold">¿Querés formar parte de una secretaría?</p>
+        <div class="mt-4 flex flex-wrap justify-center gap-3">
+          <a href="../../index.html#landing-sumate" class="nav-link inline-flex items-center justify-center gap-2 rounded-full bg-brandCoral px-5 py-3 text-white font-semibold shadow-soft transition hover:brightness-110">Sumate al equipo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="app-footer"></div>
+  <script src="../../assets/js/app.js"></script>
+</body>
+</html>

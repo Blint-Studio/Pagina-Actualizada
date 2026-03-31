@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JFC · ¿Quiénes somos?</title>
+  <meta name="description"
+    content="Juventud del Frente Cívico · Construyendo el futuro de Córdoba. Participá · Proponé · Hacé que pase" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="../../output.css" rel="stylesheet">
+  <link href="../../assets/css/quienes-somos.css" rel="stylesheet">
+</head>
+
+<body class="text-gray-800 antialiased" style="background-color: rgba(92, 191, 223, 0.05);" data-root="../../">
+  <div id="app-header"></div>
+
+  <section class="relative pb-12 pt-16" style="background-color: rgba(92, 191, 223, 0.05);">
+    <div class="qs-container">
+      <!-- Header principal -->
+      <div class="text-center mb-16">
+        <h2 class="mb-6"
+          style="font-size:clamp(2rem,3.5vw,3.2rem);font-weight:900;color:var(--brandBlue);letter-spacing:-.02em;">
+          ¿QUIÉNES <span class="text-brandCyan" style="display:block">SOMOS?</span>
+        </h2>
+        <p class="mx-auto" style="max-width:720px;color:#4B5563;font-size:1.125rem">
+          Somos jóvenes comprometidos con el futuro de <span class="font-semibold text-brandBlue">Córdoba</span>,
+          trabajando por una política diferente, transparente y participativa.
+        </p>
+      </div>
+
+      <!-- Grid de valores -->
+      <div class="values-grid mb-16">
+        <div class="card p-6">
+          <div style="display:flex;gap:1rem;align-items:flex-start">
+            <div class="grid"
+              style="place-items:center;height:48px;width:48px;border-radius:12px;background:rgba(59,130,246,.1);color:#2563eb">
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold" style="color:#2563eb;margin:.25rem 0 .5rem">Compromiso</h3>
+              <p style="color:#6B7280;font-size:.95rem">Nos comprometemos con nuestra comunidad, trabajando día a día
+                por un
+                cambio real y duradero en la política cordobesa.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-6">
+          <div style="display:flex;gap:1rem;align-items:flex-start">
+            <div class="grid"
+              style="place-items:center;height:48px;width:48px;border-radius:12px;background:rgba(6,182,212,.1);color:#0891b2">
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold" style="color:#0891b2;margin:.25rem 0 .5rem">Transparencia</h3>
+              <p style="color:#6B7280;font-size:.95rem">Creemos en una gestión transparente donde cada decisión se tome
+                pensando
+                en el bien común y con total apertura ciudadana.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-6">
+          <div style="display:flex;gap:1rem;align-items:flex-start">
+            <div class="grid"
+              style="place-items:center;height:48px;width:48px;border-radius:12px;background:rgba(249,115,22,.1);color:#ea580c">
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zm4 18v-6h2.5l-2.54-7.63A2.998 2.998 0 0 0 17.05 6h-1.53c-.8 0-1.54.37-2.01 1l-1.83 2.44A5.998 5.998 0 0 0 6 15v7h2v-7c0-2.21 1.79-4 4-4s4 1.79 4 4v7h4z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold" style="color:#ea580c;margin:.25rem 0 .5rem">Participación</h3>
+              <p style="color:#6B7280;font-size:.95rem">Fomentamos la participación activa de todos los jóvenes en la
+                construcción de políticas que nos representen verdaderamente.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-6">
+          <div style="display:flex;gap:1rem;align-items:flex-start">
+            <div class="grid"
+              style="place-items:center;height:48px;width:48px;border-radius:12px;background:rgba(0,0,0,.06);color:#111">
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold" style="color:#111;margin:.25rem 0 .5rem">Innovación</h3>
+              <p style="color:#6B7280;font-size:.95rem">Queremos ser vanguardia, innovadores a los problemas actuales,
+                usando
+                tecnología y nuevas metodologías de gestión.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-6">
+          <div style="display:flex;gap:1rem;align-items:flex-start">
+            <div class="grid"
+              style="place-items:center;height:48px;width:48px;border-radius:12px;background:rgba(168,85,247,.1);color:#7c3aed">
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26.81-1 1.39-1.9 1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold" style="color:#7c3aed;margin:.25rem 0 .5rem">Libertad</h3>
+              <p style="color:#6B7280;font-size:.95rem">Valoramos la libertad de los individuos y los derechos
+                fundamentales como
+                pilares de una sociedad justa y próspera.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-6">
+          <div style="display:flex;gap:1rem;align-items:flex-start">
+            <div class="grid"
+              style="place-items:center;height:48px;width:48px;border-radius:12px;background:rgba(59,130,246,.1);color:#2563eb">
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold" style="color:#2563eb;margin:.25rem 0 .5rem">Futuro</h3>
+              <p style="color:#6B7280;font-size:.95rem">Queremos ser nosotros, con visión de largo plazo y
+                responsabilidad
+                generacional.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="text-center mb-16">
+        <a href="#"
+          class="inline-flex items-center gap-2 rounded-full bg-brandCoral px-6 py-3 text-white font-semibold shadow-soft"
+          style="text-decoration:none;transition:filter .2s ease">
+          <span>Conocé nuestras propuestas</span>
+          <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Nuestras Autoridades -->
+      <div class="text-center mb-12">
+        <h3 class="text-2xl font-bold text-brandBlue mb-2">Nuestras Autoridades</h3>
+        <p style="color:#6B7280">Liderazgo comprometido con el futuro de la juventud cordobesa</p>
+      </div>
+
+      <div class="grid auth-grid mb-16">
+        <!-- Presidente -->
+        <div class="authority-card">
+          <div class="authority-content">
+            <div class="authority-avatar" style="background:linear-gradient(90deg,#3b82f6,#1e3a8a)">
+              <svg class="h-8 w-8" style="color:#fff" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+              </svg>
+            </div>
+            <h4 class="text-sm font-bold mb-1" style="color:var(--brandBlue)">Presidente</h4>
+            <p class="text-xs font-medium" style="color:#374151">Nombre Apellido</p>
+            <div class="authority-social" style="display:flex;justify-content:center;gap:.5rem">
+              <a href="#" class="social-link" title="Facebook">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M24 12.073C24 5.446 18.627 0 12 0S0 5.446 0 12.073C0 18.063 4.388 23.027 10.125 23.927v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                </svg>
+              </a>
+              <a href="#" class="social-link" title="Instagram">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg>
+              </a>
+              <a href="#" class="social-link" title="X (Twitter)">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="authority-button">
+            <button onclick="openModal('presidente')" class="btn btn-gradient-coral-blue">Conoceme</button>
+          </div>
+        </div>
+
+        <!-- Vicepresidente -->
+        <div class="authority-card">
+          <div class="authority-content">
+            <div class="authority-avatar" style="background:linear-gradient(90deg,#f97316,#9a3412)">
+              <svg class="h-8 w-8" style="color:#fff" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+              </svg>
+            </div>
+            <h4 class="text-sm font-bold mb-1" style="color:#FF5A36">Vicepresidente</h4>
+            <p class="text-xs font-medium" style="color:#374151">Nombre Apellido</p>
+            <div class="authority-social" style="display:flex;justify-content:center;gap:.5rem">
+              <a href="#" class="social-link" title="Facebook"><svg class="w-4 h-4" fill="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M24 12.073C24 5.446 18.627 0 12 0S0 5.446 0 12.073C0 18.063 4.388 23.027 10.125 23.927v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.467 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                </svg></a>
+              <a href="#" class="social-link" title="Instagram"><svg class="w-4 h-4" fill="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z" />
+                </svg></a>
+              <a href="#" class="social-link" title="X (Twitter)"><svg class="w-4 h-4" fill="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg></a>
+            </div>
+          </div>
+          <div class="authority-button">
+            <button onclick="openModal('vicepresidente')" class="btn btn-gradient-coral-cyan">Conoceme</button>
+          </div>
+        </div>
+
+        <!-- Presidente Junta Capital -->
+        <div class="authority-card">
+          <div class="authority-content">
+            <div class="authority-avatar" style="background:linear-gradient(90deg,#06b6d4,#155e75)">
+              <svg class="h-8 w-8" style="color:#fff" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+              </svg>
+            </div>
+            <h4 class="text-sm font-bold mb-1" style="color:#5CBFDF">Presidente Junta Capital</h4>
+            <p class="text-xs font-medium" style="color:#374151">Nombre Apellido</p>
+            <div class="authority-social" style="display:flex;justify-content:center;gap:.5rem">
+              <a href="#" class="social-link" title="Facebook"><svg class="w-4 h-4" fill="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M24 12.073C24 5.446 18.627 0 12 0S0 5.446 0 12.073C0 18.063 4.388 23.027 10.125 23.927v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.467 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                </svg></a>
+              <a href="#" class="social-link" title="Instagram"><svg class="w-4 h-4" fill="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z" />
+                </svg></a>
+              <a href="#" class="social-link" title="X (Twitter)"><svg class="w-4 h-4" fill="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg></a>
+            </div>
+          </div>
+          <div class="authority-button">
+            <button onclick="openModal('presidenteJunta')" class="btn btn-gradient-coral-gray">Conoceme</button>
+          </div>
+        </div>
+
+        <!-- Secretaria de Comunicación -->
+        <div class="authority-card">
+          <div class="authority-content">
+            <div class="authority-avatar" style="background:linear-gradient(90deg,#22c55e,#14532d)">
+              <svg class="h-8 w-8" style="color:#fff" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+              </svg>
+            </div>
+            <h4 class="text-sm font-bold mb-1" style="color:var(--brandBlue)">Secretaria de Comunicación</h4>
+            <p class="text-xs font-medium" style="color:#374151">Nombre Apellido</p>
+            <div class="authority-social" style="display:flex;justify-content:center;gap:.5rem">
+              <a href="#" class="social-link" title="Facebook"><svg class="w-4 h-4" fill="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M24 12.073C24 5.446 18.627 0 12 0S0 5.446 0 12.073C0 18.063 4.388 23.027 10.125 23.927v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.467 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                </svg></a>
+              <a href="#" class="social-link" title="Instagram"><svg class="w-4 h-4" fill="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z" />
+                </svg></a>
+              <a href="#" class="social-link" title="X (Twitter)"><svg class="w-4 h-4" fill="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg></a>
+            </div>
+          </div>
+          <div class="authority-button">
+            <button onclick="openModal('comunicacion')" class="btn btn-gradient-coral">Conoceme</button>
+          </div>
+        </div>
+
+        <!-- Secretario de Acción Digital -->
+        <div class="authority-card">
+          <div class="authority-content">
+            <div class="authority-avatar" style="background:linear-gradient(90deg,#a855f7,#4c1d95)">
+              <svg class="h-8 w-8" style="color:#fff" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+              </svg>
+            </div>
+            <h4 class="text-sm font-bold mb-1" style="color:#FF5A36">Secretario de Acción Digital</h4>
+            <p class="text-xs font-medium" style="color:#374151">Nombre Apellido</p>
+            <div class="authority-social" style="display:flex;justify-content:center;gap:.5rem">
+              <a href="#" class="social-link" title="Facebook"><svg class="w-4 h-4" fill="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M24 12.073C24 5.446 18.627 0 12 0S0 5.446 0 12.073C0 18.063 4.388 23.027 10.125 23.927v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.467 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                </svg></a>
+              <a href="#" class="social-link" title="Instagram"><svg class="w-4 h-4" fill="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z" />
+                </svg></a>
+              <a href="#" class="social-link" title="X (Twitter)"><svg class="w-4 h-4" fill="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg></a>
+            </div>
+          </div>
+          <div class="authority-button">
+            <button onclick="openModal('accionDigital')" class="btn btn-gradient-coral-blue">Conoceme</button>
+          </div>
+        </div>
+
+        <!-- Secretaria de Vinculación Estudiantil -->
+        <div class="authority-card">
+          <div class="authority-content">
+            <div class="authority-avatar" style="background:linear-gradient(90deg,#ec4899,#831843)">
+              <svg class="h-8 w-8" style="color:#fff" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+              </svg>
+            </div>
+            <h4 class="text-sm font-bold mb-1" style="color:#5CBFDF">Secretaria de Vinculación Estudiantil</h4>
+            <p class="text-xs font-medium" style="color:#374151">Nombre Apellido</p>
+            <div class="authority-social" style="display:flex;justify-content:center;gap:.5rem">
+              <a href="#" class="social-link" title="Facebook"><svg class="w-4 h-4" fill="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M24 12.073C24 5.446 18.627 0 12 0S0 5.446 0 12.073C0 18.063 4.388 23.027 10.125 23.927v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.467 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                </svg></a>
+              <a href="#" class="social-link" title="Instagram"><svg class="w-4 h-4" fill="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z" />
+                </svg></a>
+              <a href="#" class="social-link" title="X (Twitter)"><svg class="w-4 h-4" fill="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg></a>
+            </div>
+          </div>
+          <div class="authority-button">
+            <button onclick="openModal('vinculacionEstudiantil')" class="btn btn-gradient-coral-cyan">Conoceme</button>
+          </div>
+        </div>
+
+        <!-- Secretaria de Acción Social -->
+        <div class="authority-card">
+          <div class="authority-content">
+            <div class="authority-avatar" style="background:linear-gradient(90deg,#ef4444,#7f1d1d)">
+              <svg class="h-8 w-8" style="color:#fff" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+              </svg>
+            </div>
+            <h4 class="text-sm font-bold mb-1" style="color:#969696">Secretaria de Acción Social</h4>
+            <p class="text-xs font-medium" style="color:#374151">Nombre Apellido</p>
+            <div class="authority-social" style="display:flex;justify-content:center;gap:.5rem">
+              <a href="#" class="social-link" title="Facebook"><svg class="w-4 h-4" fill="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M24 12.073C24 5.446 18.627 0 12 0S0 5.446 0 12.073C0 18.063 4.388 23.027 10.125 23.927v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.59l-.467 3.47h-3.123V24h6.127C23.403 24 24 23.403 24 22.667V1.333C24 .597 23.403 0 22.675 0z" />
+                </svg></a>
+              <a href="#" class="social-link" title="Instagram"><svg class="w-4 h-4" fill="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z" />
+                </svg></a>
+              <a href="#" class="social-link" title="X (Twitter)"><svg class="w-4 h-4" fill="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg></a>
+            </div>
+          </div>
+          <div class="authority-button">
+            <button onclick="openModal('accionSocial')" class="btn btn-gradient-coral-gray">Conoceme</button>
+          </div>
+        </div>
+
+        <!-- Secretario de Formación Política -->
+        <div class="authority-card">
+          <div class="authority-content">
+            <div class="authority-avatar" style="background:linear-gradient(90deg,#eab308,#713f12)">
+              <svg class="h-8 w-8" style="color:#fff" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+              </svg>
+            </div>
+            <h4 class="text-sm font-bold mb-1" style="color:var(--brandBlue)">Secretario de Formación Política</h4>
+            <p class="text-xs font-medium" style="color:#374151">Nombre Apellido</p>
+            <div class="authority-social" style="display:flex;justify-content:center;gap:.5rem">
+              <a href="#" class="social-link" title="Facebook"><svg class="w-4 h-4" fill="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M24 12.073C24 5.446 18.627 0 12 0S0 5.446 0 12.073C0 18.063 4.388 23.027 10.125 23.927v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.467 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                </svg></a>
+              <a href="#" class="social-link" title="Instagram"><svg class="w-4 h-4" fill="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z" />
+                </svg></a>
+              <a href="#" class="social-link" title="X (Twitter)"><svg class="w-4 h-4" fill="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg></a>
+            </div>
+          </div>
+          <div class="authority-button">
+            <button onclick="openModal('formacionPolitica')" class="btn btn-gradient-coral">Conoceme</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODALES COINCIDENTES CON CADA BOTÓN -->
+
+  <!-- PRESIDENTE -->
+  <div id="modal-presidente" class="modal-overlay-base hidden" aria-hidden="true">
+    <div class="absolute inset-0" onclick="closeModal('presidente')"></div>
+    <div class="relative mx-auto my-10 w-[92%] max-w-2xl modal-outer">
+      <div class="bg-white rounded-2xl shadow-2xl ring-1 ring-black/5 overflow-hidden modal-card">
+        <div class="flex items-center justify-end p-3">
+          <button class="inline-flex w-10 h-10 items-center justify-center rounded-full hover:bg-black/5"
+            aria-label="Cerrar" onclick="closeModal('presidente')">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+            </svg>
+          </button>
+        </div>
+        <div class="px-6 md:px-10 pb-10">
+          <div class="w-20 h-20 mx-auto grid place-items-center rounded-full text-white"
+            style="background:linear-gradient(135deg,#001F71,#5CBFDF)">
+            <svg class="w-9 h-9" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 12c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm0 2c-3.33 0-10 1.67-10 5v3h20v-3c0-3.33-6.67-5-10-5z" />
+            </svg>
+          </div>
+          <h2 class="mt-5 text-center text-3xl md:text-4xl font-black text-brandBlue tracking-tight">Nombre Apellido
+          </h2>
+          <p class="mt-2 text-center text-sm font-semibold text-brandBlue">
+            <span class="inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full inline-block"
+                style="background:#FF5A36"></span>Presidente · Junta Capital</span>
+          </p>
+          <p class="mt-4 text-center text-gray-600 max-w-xl mx-auto leading-relaxed">
+            Descripción breve (2–3 líneas) que sintetiza la vocación pública, el foco de gestión y el impacto logrado.
+          </p>
+
+          <!-- Redes -->
+          <div class="mt-5 flex items-center justify-center gap-6 text-gray-600">
+            <a href="#" aria-label="Facebook" class="hover:text-brandBlue transition">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M22.675 0h-21.35C.596 0 0 .597 0 1.333v21.334C0 23.403.596 24 1.325 24H12.82V14.708h-3.13v-3.62h3.13V8.413c0-3.1 1.894-4.788 4.66-4.788 1.324 0 2.463.099 2.794.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.765v2.316h3.59l-.467 3.62h-3.123V24h6.127C23.403 24 24 23.403 24 22.667V1.333C24 .597 23.403 0 22.675 0z" />
+              </svg>
+            </a>
+            <!-- Instagram legible -->
+            <a href="#" aria-label="Instagram" class="hover:text-brandBlue transition">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7z" />
+                <path
+                  d="M12 7.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5z" />
+                <circle cx="18" cy="6.5" r="1.1" />
+              </svg>
+            </a>
+            <a href="#" aria-label="X" class="hover:text-brandBlue transition">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Tres secciones iguales para todos -->
+          <div class="mt-8 grid gap-10 md:grid-cols-2">
+            <section>
+              <h3 class="text-lg font-bold text-brandBlue flex items-center gap-2">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3z" />
+                </svg>
+                Formación
+              </h3>
+              <ul class="mt-3 space-y-2 text-[15px] text-gray-700">
+                <li>• Lic. en Ciencias Políticas — UNC</li>
+                <li>• Diplomatura en Gestión Pública</li>
+                <li>• Promedio: 8.75</li>
+              </ul>
+            </section>
+
+            <section>
+              <h3 class="text-lg font-bold text-brandBlue flex items-center gap-2">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M20 6h-2.5L16.4 4.9c-.3-.3-.6-.4-.9-.4h-7c-.3 0-.6.1-.9.4L6.5 6H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z" />
+                </svg>
+                Experiencia
+              </h3>
+              <ul class="mt-3 space-y-2 text-[15px] text-gray-700">
+                <li>• Presidente JFC (2022 — Presente)</li>
+                <li>• Legislatura de Córdoba (2021)</li>
+                <li>• Coordinación de programas juveniles</li>
+              </ul>
+            </section>
+
+            <section class="md:col-span-2">
+              <h3 class="text-lg font-bold text-brandBlue flex items-center gap-2">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                </svg>
+                Logros destacados
+              </h3>
+              <ul class="mt-3 grid gap-y-2 gap-x-10 sm:grid-cols-2 text-[15px] text-gray-700">
+                <li>• Creación de 15 centros juveniles provinciales</li>
+                <li>• Programa “Jóvenes Protagonistas” (2.500 beneficiarios)</li>
+                <li>• Reconocimiento “Joven Destacado” — Legislatura 2021</li>
+                <li>• Alianzas con 10+ instituciones educativas</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- VICEPRESIDENTE -->
+  <div id="modal-vicepresidente" class="modal-overlay-base hidden" aria-hidden="true">
+    <div class="absolute inset-0" onclick="closeModal('vicepresidente')"></div>
+    <div class="relative mx-auto my-10 w-[92%] max-w-2xl modal-outer">
+      <div class="bg-white rounded-2xl shadow-2xl ring-1 ring-black/5 overflow-hidden modal-card">
+        <div class="flex items-center justify-end p-3">
+          <button class="inline-flex w-10 h-10 items-center justify-center rounded-full hover:bg-black/5"
+            onclick="closeModal('vicepresidente')" aria-label="Cerrar">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+            </svg>
+          </button>
+        </div>
+        <div class="px-6 md:px-10 pb-10">
+          <div class="w-20 h-20 mx-auto grid place-items-center rounded-full text-white"
+            style="background:linear-gradient(135deg,#FF5A36,#9a3412)">
+            <svg class="w-9 h-9" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 12c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm0 2c-3.33 0-10 1.67-10 5v3h20v-3c0-3.33-6.67-5-10-5z" />
+            </svg>
+          </div>
+          <h2 class="mt-5 text-center text-3xl md:text-4xl font-black text-brandBlue tracking-tight">Nombre Apellido
+          </h2>
+          <p class="mt-2 text-center text-sm font-semibold text-brandBlue"><span
+              class="inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full inline-block"
+                style="background:#FF5A36"></span>Vicepresidente</span></p>
+          <p class="mt-4 text-center text-gray-600 max-w-xl mx-auto leading-relaxed">Descripción breve del rol y foco de
+            gestión.</p>
+
+          <!-- Redes -->
+          <div class="mt-5 flex items-center justify-center gap-6 text-gray-600">
+            <a href="#" aria-label="Facebook" class="hover:text-brandBlue transition">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M22.675 0h-21.35C.596 0 0 .597 0 1.333v21.334C0 23.403.596 24 1.325 24H12.82V14.708h-3.13v-3.62h3.13V8.413c0-3.1 1.894-4.788 4.66-4.788 1.324 0 2.463.099 2.794.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.765v2.316h3.59l-.467 3.62h-3.123V24h6.127C23.403 24 24 23.403 24 22.667V1.333C24 .597 23.403 0 22.675 0z" />
+              </svg>
+            </a>
+            <!-- Instagram legible -->
+            <a href="#" aria-label="Instagram" class="hover:text-brandBlue transition">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7z" />
+                <path
+                  d="M12 7.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5z" />
+                <circle cx="18" cy="6.5" r="1.1" />
+              </svg>
+            </a>
+            <a href="#" aria-label="X" class="hover:text-brandBlue transition">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- mismas secciones -->
+          <div class="mt-8 grid gap-10 md:grid-cols-2">
+            <section>
+              <h3 class="text-lg font-bold text-brandBlue flex items-center gap-2"><svg class="w-5 h-5"
+                  viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3z" />
+                </svg>Formación</h3>
+              <ul class="mt-3 space-y-2 text-[15px] text-gray-700">
+                <li>• Ing. en Sistemas — UTN</li>
+                <li>• Especialización en Gestión Pública</li>
+                <li>• Promedio: 8.70</li>
+              </ul>
+            </section>
+            <section>
+              <h3 class="text-lg font-bold text-brandBlue flex items-center gap-2"><svg class="w-5 h-5"
+                  viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M20 6h-2.5L16.4 4.9c-.3-.3-.6-.4-.9-.4h-7c-.3 0-.6.1-.9.4L6.5 6H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z" />
+                </svg>Experiencia</h3>
+              <ul class="mt-3 space-y-2 text-[15px] text-gray-700">
+                <li>• Vicepresidente JFC (2023 — Presente)</li>
+                <li>• Coordinación territorial</li>
+                <li>• Gestión de proyectos</li>
+              </ul>
+            </section>
+            <section class="md:col-span-2">
+              <h3 class="text-lg font-bold text-brandBlue flex items-center gap-2"><svg class="w-5 h-5"
+                  viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                </svg>Logros destacados</h3>
+              <ul class="mt-3 grid gap-y-2 gap-x-10 sm:grid-cols-2 text-[15px] text-gray-700">
+                <li>• 25 proyectos territoriales liderados</li>
+                <li>• 2.500+ beneficiarios directos</li>
+                <li>• Alianzas con 10+ instituciones</li>
+                <li>• Programas juveniles innovadores</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRESIDENTE JUNTA CAPITAL -->
+  <div id="modal-presidenteJunta" class="modal-overlay-base hidden" aria-hidden="true">
+    <div class="absolute inset-0" onclick="closeModal('presidenteJunta')"></div>
+    <div class="relative mx-auto my-10 w-[92%] max-w-2xl modal-outer">
+      <div class="bg-white rounded-2xl shadow-2xl ring-1 ring-black/5 overflow-hidden modal-card">
+        <div class="flex items-center justify-end p-3">
+          <button class="inline-flex w-10 h-10 items-center justify-center rounded-full hover:bg-black/5"
+            onclick="closeModal('presidenteJunta')" aria-label="Cerrar">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+            </svg>
+          </button>
+        </div>
+        <div class="px-6 md:px-10 pb-10">
+          <div class="w-20 h-20 mx-auto grid place-items-center rounded-full text-white"
+            style="background:linear-gradient(135deg,#06b6d4,#001F71)">
+            <svg class="w-9 h-9" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 12c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm0 2c-3.33 0-10 1.67-10 5v3h20v-3c0-3.33-6.67-5-10-5z" />
+            </svg>
+          </div>
+          <h2 class="mt-5 text-center text-3xl md:text-4xl font-black text-brandBlue tracking-tight">Nombre Apellido
+          </h2>
+          <p class="mt-2 text-center text-sm font-semibold text-brandBlue"><span
+              class="inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full inline-block"
+                style="background:#FF5A36"></span>Presidente · Junta Capital</span></p>
+          <p class="mt-4 text-center text-gray-600 max-w-xl mx-auto leading-relaxed">Descripción breve del rol y foco de
+            gestión.</p>
+          <!-- Redes -->
+          <div class="mt-5 flex items-center justify-center gap-6 text-gray-600">
+            <a href="#" aria-label="Facebook" class="hover:text-brandBlue transition">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M22.675 0h-21.35C.596 0 0 .597 0 1.333v21.334C0 23.403.596 24 1.325 24H12.82V14.708h-3.13v-3.62h3.13V8.413c0-3.1 1.894-4.788 4.66-4.788 1.324 0 2.463.099 2.794.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.765v2.316h3.59l-.467 3.62h-3.123V24h6.127C23.403 24 24 23.403 24 22.667V1.333C24 .597 23.403 0 22.675 0z" />
+              </svg>
+            </a>
+            <!-- Instagram legible -->
+            <a href="#" aria-label="Instagram" class="hover:text-brandBlue transition">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7z" />
+                <path
+                  d="M12 7.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5z" />
+                <circle cx="18" cy="6.5" r="1.1" />
+              </svg>
+            </a>
+            <a href="#" aria-label="X" class="hover:text-brandBlue transition">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- mismas secciones -->
+          <div class="mt-8 grid gap-10 md:grid-cols-2">
+            <section>
+              <h3 class="text-lg font-bold text-brandBlue flex items-center gap-2"><svg class="w-5 h-5"
+                  viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3z" />
+                </svg>Formación</h3>
+              <ul class="mt-3 space-y-2 text-[15px] text-gray-700">
+                <li>• Lic. en Ciencias Políticas — UNC</li>
+                <li>• Diplomatura en Gestión Pública</li>
+                <li>• Promedio: 8.60</li>
+              </ul>
+            </section>
+            <section>
+              <h3 class="text-lg font-bold text-brandBlue flex items-center gap-2"><svg class="w-5 h-5"
+                  viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M20 6h-2.5L16.4 4.9c-.3-.3-.6-.4-.9-.4h-7c-.3 0-.6.1-.9.4L6.5 6H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z" />
+                </svg>Experiencia</h3>
+              <ul class="mt-3 space-y-2 text-[15px] text-gray-700">
+                <li>• Presidente Junta Capital (2022 — Presente)</li>
+                <li>• Gestión barrial (2020—2021)</li>
+                <li>• Articulación con instituciones</li>
+              </ul>
+            </section>
+            <section class="md:col-span-2">
+              <h3 class="text-lg font-bold text-brandBlue flex items-center gap-2"><svg class="w-5 h-5"
+                  viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                </svg>Logros destacados</h3>
+              <ul class="mt-3 grid gap-y-2 gap-x-10 sm:grid-cols-2 text-[15px] text-gray-700">
+                <li>• 15 centros juveniles provinciales</li>
+                <li>• 2.500+ beneficiarios</li>
+                <li>• 10+ alianzas educativas</li>
+                <li>• Programas de participación</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECRETARIA DE COMUNICACIÓN -->
+  <div id="modal-comunicacion" class="modal-overlay-base hidden" aria-hidden="true">
+    <div class="absolute inset-0" onclick="closeModal('comunicacion')"></div>
+    <div class="relative mx-auto my-10 w-[92%] max-w-2xl modal-outer">
+      <div class="bg-white rounded-2xl shadow-2xl ring-1 ring-black/5 overflow-hidden modal-card">
+        <div class="flex items-center justify-end p-3">
+          <button class="inline-flex w-10 h-10 items-center justify-center rounded-full hover:bg-black/5"
+            onclick="closeModal('comunicacion')" aria-label="Cerrar">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+            </svg>
+          </button>
+        </div>
+        <div class="px-6 md:px-10 pb-10">
+          <div class="w-20 h-20 mx-auto grid place-items-center rounded-full text-white"
+            style="background:linear-gradient(135deg,#22c55e,#14532d)">
+            <svg class="w-9 h-9" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 12c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm0 2c-3.33 0-10 1.67-10 5v3h20v-3c0-3.33-6.67-5-10-5z" />
+            </svg>
+          </div>
+          <h2 class="mt-5 text-center text-3xl md:text-4xl font-black text-brandBlue tracking-tight">Nombre Apellido
+          </h2>
+          <p class="mt-2 text-center text-sm font-semibold text-brandBlue"><span
+              class="inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full inline-block"
+                style="background:#FF5A36"></span>Secretaria de Comunicación</span></p>
+          <p class="mt-4 text-center text-gray-600 max-w-xl mx-auto leading-relaxed">Descripción breve del rol y foco de
+            gestión.</p>
+          <!-- Redes -->
+          <div class="mt-5 flex items-center justify-center gap-6 text-gray-600">
+            <a href="#" aria-label="Facebook" class="hover:text-brandBlue transition">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M22.675 0h-21.35C.596 0 0 .597 0 1.333v21.334C0 23.403.596 24 1.325 24H12.82V14.708h-3.13v-3.62h3.13V8.413c0-3.1 1.894-4.788 4.66-4.788 1.324 0 2.463.099 2.794.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.765v2.316h3.59l-.467 3.62h-3.123V24h6.127C23.403 24 24 23.403 24 22.667V1.333C24 .597 23.403 0 22.675 0z" />
+              </svg>
+            </a>
+            <!-- Instagram legible -->
+            <a href="#" aria-label="Instagram" class="hover:text-brandBlue transition">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7z" />
+                <path
+                  d="M12 7.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5z" />
+                <circle cx="18" cy="6.5" r="1.1" />
+              </svg>
+            </a>
+            <a href="#" aria-label="X" class="hover:text-brandBlue transition">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
+          </div>
+          <!-- mismas secciones -->
+          <div class="mt-8 grid gap-10 md:grid-cols-2">
+            <section>
+              <h3 class="text-lg font-bold text-brandBlue flex items-center gap-2"><svg class="w-5 h-5"
+                  viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3z" />
+                </svg>Formación</h3>
+              <ul class="mt-3 space-y-2 text-[15px] text-gray-700">
+                <li>• Lic. en Comunicación — UNC</li>
+                <li>• Esp. Marketing Digital</li>
+                <li>• Analítica de contenidos</li>
+              </ul>
+            </section>
+            <section>
+              <h3 class="text-lg font-bold text-brandBlue flex items-center gap-2"><svg class="w-5 h-5"
+                  viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M20 6h-2.5L16.4 4.9c-.3-.3-.6-.4-.9-.4h-7c-.3 0-.6.1-.9.4L6.5 6H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z" />
+                </svg>Experiencia</h3>
+              <ul class="mt-3 space-y-2 text-[15px] text-gray-700">
+                <li>• Secretaria de Comunicación (2023—Presente)</li>
+                <li>• Community Manager</li>
+                <li>• Consultora en estrategia digital</li>
+              </ul>
+            </section>
+            <section class="md:col-span-2">
+              <h3 class="text-lg font-bold text-brandBlue flex items-center gap-2"><svg class="w-5 h-5"
+                  viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                </svg>Logros destacados</h3>
+              <ul class="mt-3 grid gap-y-2 gap-x-10 sm:grid-cols-2 text-[15px] text-gray-700">
+                <li>• 30% más alcance orgánico</li>
+                <li>• 15 campañas integrales</li>
+                <li>• 20 alianzas de difusión</li>
+                <li>• Talleres de vocería</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECRETARIO DE ACCIÓN DIGITAL -->
+  <div id="modal-accionDigital" class="modal-overlay-base hidden" aria-hidden="true">
+    <div class="absolute inset-0" onclick="closeModal('accionDigital')"></div>
+    <div class="relative mx-auto my-10 w-[92%] max-w-2xl modal-outer">
+      <div class="bg-white rounded-2xl shadow-2xl ring-1 ring-black/5 overflow-hidden modal-card">
+        <div class="flex items-center justify-end p-3">
+          <button class="inline-flex w-10 h-10 items-center justify-center rounded-full hover:bg-black/5"
+            onclick="closeModal('accionDigital')" aria-label="Cerrar">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+            </svg>
+          </button>
+        </div>
+        <div class="px-6 md:px-10 pb-10">
+          <div class="w-20 h-20 mx-auto grid place-items-center rounded-full text-white"
+            style="background:linear-gradient(135deg,#a855f7,#4c1d95)">
+            <svg class="w-9 h-9" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 12c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm0 2c-3.33 0-10 1.67-10 5v3h20v-3c0-3.33-6.67-5-10-5z" />
+            </svg>
+          </div>
+          <h2 class="mt-5 text-center text-3xl md:text-4xl font-black text-brandBlue tracking-tight">Nombre Apellido
+          </h2>
+          <p class="mt-2 text-center text-sm font-semibold text-brandBlue"><span
+              class="inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full inline-block"
+                style="background:#FF5A36"></span>Secretario de Acción Digital</span></p>
+          <p class="mt-4 text-center text-gray-600 max-w-xl mx-auto leading-relaxed">Descripción breve del rol y foco de
+            gestión.</p>
+          <!-- Redes -->
+          <div class="mt-5 flex items-center justify-center gap-6 text-gray-600">
+            <a href="#" aria-label="Facebook" class="hover:text-brandBlue transition">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M22.675 0h-21.35C.596 0 0 .597 0 1.333v21.334C0 23.403.596 24 1.325 24H12.82V14.708h-3.13v-3.62h3.13V8.413c0-3.1 1.894-4.788 4.66-4.788 1.324 0 2.463.099 2.794.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.765v2.316h3.59l-.467 3.62h-3.123V24h6.127C23.403 24 24 23.403 24 22.667V1.333C24 .597 23.403 0 22.675 0z" />
+              </svg>
+            </a>
+            <!-- Instagram legible -->
+            <a href="#" aria-label="Instagram" class="hover:text-brandBlue transition">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7z" />
+                <path
+                  d="M12 7.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5z" />
+                <circle cx="18" cy="6.5" r="1.1" />
+              </svg>
+            </a>
+            <a href="#" aria-label="X" class="hover:text-brandBlue transition">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
+          </div>
+          <!-- mismas secciones -->
+          <div class="mt-8 grid gap-10 md:grid-cols-2">
+            <section>
+              <h3 class="text-lg font-bold text-brandBlue flex items-center gap-2"><svg class="w-5 h-5"
+                  viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3z" />
+                </svg>Formación</h3>
+              <ul class="mt-3 space-y-2 text-[15px] text-gray-700">
+                <li>• Ing. en Sistemas de Información — UTN</li>
+                <li>• Certificación en Marketing Digital</li>
+                <li>• Data & Analytics</li>
+              </ul>
+            </section>
+            <section>
+              <h3 class="text-lg font-bold text-brandBlue flex items-center gap-2"><svg class="w-5 h-5"
+                  viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M20 6h-2.5L16.4 4.9c-.3-.3-.6-.4-.9-.4h-7c-.3 0-.6.1-.9.4L6.5 6H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z" />
+                </svg>Experiencia</h3>
+              <ul class="mt-3 space-y-2 text-[15px] text-gray-700">
+                <li>• Secretario de Acción Digital (2024—Presente)</li>
+                <li>• Project Manager en tech</li>
+                <li>• Especialista en datos</li>
+              </ul>
+            </section>
+            <section class="md:col-span-2">
+              <h3 class="text-lg font-bold text-brandBlue flex items-center gap-2"><svg class="w-5 h-5"
+                  viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                </svg>Logros destacados</h3>
+              <ul class="mt-3 grid gap-y-2 gap-x-10 sm:grid-cols-2 text-[15px] text-gray-700">
+                <li>• 50K+ interacciones mensuales</li>
+                <li>• 20 campañas de performance</li>
+                <li>• Automatizaciones de reporting</li>
+                <li>• Capacitaciones a equipos</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECRETARIA DE VINCULACIÓN ESTUDIANTIL -->
+  <div id="modal-vinculacionEstudiantil" class="modal-overlay-base hidden" aria-hidden="true">
+    <div class="absolute inset-0" onclick="closeModal('vinculacionEstudiantil')"></div>
+    <div class="relative mx-auto my-10 w-[92%] max-w-2xl modal-outer">
+      <div class="bg-white rounded-2xl shadow-2xl ring-1 ring-black/5 overflow-hidden modal-card">
+        <div class="flex items-center justify-end p-3">
+          <button class="inline-flex w-10 h-10 items-center justify-center rounded-full hover:bg-black/5"
+            onclick="closeModal('vinculacionEstudiantil')" aria-label="Cerrar">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+            </svg>
+          </button>
+        </div>
+        <div class="px-6 md:px-10 pb-10">
+          <div class="w-20 h-20 mx-auto grid place-items-center rounded-full text-white"
+            style="background:linear-gradient(135deg,#ec4899,#831843)">
+            <svg class="w-9 h-9" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 12c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm0 2c-3.33 0-10 1.67-10 5v3h20v-3c0-3.33-6.67-5-10-5z" />
+            </svg>
+          </div>
+          <h2 class="mt-5 text-center text-3xl md:text-4xl font-black text-brandBlue tracking-tight">Nombre Apellido
+          </h2>
+          <p class="mt-2 text-center text-sm font-semibold text-brandBlue"><span
+              class="inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full inline-block"
+                style="background:#FF5A36"></span>Secretaria de Vinculación Estudiantil</span></p>
+          <p class="mt-4 text-center text-gray-600 max-w-xl mx-auto leading-relaxed">Descripción breve del rol y foco de
+            gestión.</p>
+          <!-- Redes -->
+          <div class="mt-5 flex items-center justify-center gap-6 text-gray-600">
+            <a href="#" aria-label="Facebook" class="hover:text-brandBlue transition">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M22.675 0h-21.35C.596 0 0 .597 0 1.333v21.334C0 23.403.596 24 1.325 24H12.82V14.708h-3.13v-3.62h3.13V8.413c0-3.1 1.894-4.788 4.66-4.788 1.324 0 2.463.099 2.794.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.765v2.316h3.59l-.467 3.62h-3.123V24h6.127C23.403 24 24 23.403 24 22.667V1.333C24 .597 23.403 0 22.675 0z" />
+              </svg>
+            </a>
+            <!-- Instagram legible -->
+            <a href="#" aria-label="Instagram" class="hover:text-brandBlue transition">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7z" />
+                <path
+                  d="M12 7.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5z" />
+                <circle cx="18" cy="6.5" r="1.1" />
+              </svg>
+            </a>
+            <a href="#" aria-label="X" class="hover:text-brandBlue transition">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
+          </div>
+          <!-- mismas secciones -->
+          <div class="mt-8 grid gap-10 md:grid-cols-2">
+            <section>
+              <h3 class="text-lg font-bold text-brandBlue flex items-center gap-2"><svg class="w-5 h-5"
+                  viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3z" />
+                </svg>Formación</h3>
+              <ul class="mt-3 space-y-2 text-[15px] text-gray-700">
+                <li>• Sociología — UNC (avanzada)</li>
+                <li>• Diplomatura en Liderazgo Juvenil</li>
+                <li>• Gestión de proyectos</li>
+              </ul>
+            </section>
+            <section>
+              <h3 class="text-lg font-bold text-brandBlue flex items-center gap-2"><svg class="w-5 h-5"
+                  viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M20 6h-2.5L16.4 4.9c-.3-.3-.6-.4-.9-.4h-7c-.3 0-.6.1-.9.4L6.5 6H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z" />
+                </svg>Experiencia</h3>
+              <ul class="mt-3 space-y-2 text-[15px] text-gray-700">
+                <li>• Presidenta Centro de Estudiantes (2022—2023)</li>
+                <li>• Coordinación de voluntariados</li>
+                <li>• Articulación interuniversitaria</li>
+              </ul>
+            </section>
+            <section class="md:col-span-2">
+              <h3 class="text-lg font-bold text-brandBlue flex items-center gap-2"><svg class="w-5 h-5"
+                  viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                </svg>Logros destacados</h3>
+              <ul class="mt-3 grid gap-y-2 gap-x-10 sm:grid-cols-2 text-[15px] text-gray-700">
+                <li>• 15 centros estudiantiles activos</li>
+                <li>• 2.000 participantes en programas</li>
+                <li>• 12 convenios universitarios</li>
+                <li>• Red de tutores pares</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECRETARIA DE ACCIÓN SOCIAL -->
+  <div id="modal-accionSocial" class="modal-overlay-base hidden" aria-hidden="true">
+    <div class="absolute inset-0 bg-black/20 backdrop-blur-sm" onclick="closeModal('accionSocial')"></div>
+    <div class="relative mx-auto my-10 w-[92%] max-w-2xl modal-outer">
+      <div class="bg-white rounded-2xl shadow-2xl ring-1 ring-black/5 overflow-hidden modal-card">
+        <div class="flex items-center justify-end p-3">
+          <button class="inline-flex w-10 h-10 items-center justify-center rounded-full hover:bg-black/5"
+            onclick="closeModal('accionSocial')" aria-label="Cerrar">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+            </svg>
+          </button>
+        </div>
+        <div class="px-6 md:px-10 pb-10">
+          <div class="w-20 h-20 mx-auto grid place-items-center rounded-full text-white"
+            style="background:linear-gradient(135deg,#ef4444,#7f1d1d)">
+            <svg class="w-9 h-9" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 12c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm0 2c-3.33 0-10 1.67-10 5v3h20v-3c0-3.33-6.67-5-10-5z" />
+            </svg>
+          </div>
+          <h2 class="mt-5 text-center text-3xl md:text-4xl font-black text-brandBlue tracking-tight">Nombre Apellido
+          </h2>
+          <p class="mt-2 text-center text-sm font-semibold text-brandBlue"><span
+              class="inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full inline-block"
+                style="background:#FF5A36"></span>Secretaria de Acción Social</span></p>
+          <p class="mt-4 text-center text-gray-600 max-w-xl mx-auto leading-relaxed">Descripción breve del rol y foco de
+            gestión.</p>
+          <!-- Redes -->
+          <div class="mt-5 flex items-center justify-center gap-6 text-gray-600">
+            <a href="#" aria-label="Facebook" class="hover:text-brandBlue transition">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M22.675 0h-21.35C.596 0 0 .597 0 1.333v21.334C0 23.403.596 24 1.325 24H12.82V14.708h-3.13v-3.62h3.13V8.413c0-3.1 1.894-4.788 4.66-4.788 1.324 0 2.463.099 2.794.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.765v2.316h3.59l-.467 3.62h-3.123V24h6.127C23.403 24 24 23.403 24 22.667V1.333C24 .597 23.403 0 22.675 0z" />
+              </svg>
+            </a>
+            <!-- Instagram legible -->
+            <a href="#" aria-label="Instagram" class="hover:text-brandBlue transition">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7z" />
+                <path
+                  d="M12 7.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5z" />
+                <circle cx="18" cy="6.5" r="1.1" />
+              </svg>
+            </a>
+            <a href="#" aria-label="X" class="hover:text-brandBlue transition">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
+          </div>
+          <!-- mismas secciones -->
+          <div class="mt-8 grid gap-10 md:grid-cols-2">
+            <section>
+              <h3 class="text-lg font-bold text-brandBlue flex items-center gap-2"><svg class="w-5 h-5"
+                  viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3z" />
+                </svg>Formación</h3>
+              <ul class="mt-3 space-y-2 text-[15px] text-gray-700">
+                <li>• Trabajo Social — UNC</li>
+                <li>• Gestión de políticas públicas</li>
+                <li>• Mediación comunitaria</li>
+              </ul>
+            </section>
+            <section>
+              <h3 class="text-lg font-bold text-brandBlue flex items-center gap-2"><svg class="w-5 h-5"
+                  viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M20 6h-2.5L16.4 4.9c-.3-.3-.6-.4-.9-.4h-7c-.3 0-.6.1-.9.4L6.5 6H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z" />
+                </svg>Experiencia</h3>
+              <ul class="mt-3 space-y-2 text-[15px] text-gray-700">
+                <li>• Programas comunitarios</li>
+                <li>• Operativos barriales</li>
+                <li>• Redes con organizaciones sociales</li>
+              </ul>
+            </section>
+            <section class="md:col-span-2">
+              <h3 class="text-lg font-bold text-brandBlue flex items-center gap-2"><svg class="w-5 h-5"
+                  viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                </svg>Logros destacados</h3>
+              <ul class="mt-3 grid gap-y-2 gap-x-10 sm:grid-cols-2 text-[15px] text-gray-700">
+                <li>• 1.500 familias asistidas</li>
+                <li>• 25 operativos integrales</li>
+                <li>• 30 organizaciones articuladas</li>
+                <li>• Red de voluntariado</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECRETARIO DE FORMACIÓN POLÍTICA -->
+  <div id="modal-formacionPolitica" class="modal-overlay-base hidden" aria-hidden="true">
+    <div class="absolute inset-0 bg-black/20 backdrop-blur-sm" onclick="closeModal('formacionPolitica')"></div>
+    <div class="relative mx-auto my-10 w-[92%] max-w-2xl modal-outer">
+      <div class="bg-white rounded-2xl shadow-2xl ring-1 ring-black/5 overflow-hidden modal-card">
+        <div class="flex items-center justify-end p-3">
+          <button class="inline-flex w-10 h-10 items-center justify-center rounded-full hover:bg-black/5"
+            onclick="closeModal('formacionPolitica')" aria-label="Cerrar">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+            </svg>
+          </button>
+        </div>
+        <div class="px-6 md:px-10 pb-10">
+          <div class="w-20 h-20 mx-auto grid place-items-center rounded-full text-white"
+            style="background:linear-gradient(135deg,#eab308,#713f12)">
+            <svg class="w-9 h-9" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 12c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm0 2c-3.33 0-10 1.67-10 5v3h20v-3c0-3.33-6.67-5-10-5z" />
+            </svg>
+          </div>
+          <h2 class="mt-5 text-center text-3xl md:text-4xl font-black text-brandBlue tracking-tight">Nombre Apellido
+          </h2>
+          <p class="mt-2 text-center text-sm font-semibold text-brandBlue"><span
+              class="inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full inline-block"
+                style="background:#FF5A36"></span>Secretario de Formación Política</span></p>
+          <p class="mt-4 text-center text-gray-600 max-w-xl mx-auto leading-relaxed">Descripción breve del rol y foco de
+            gestión.</p>
+          <!-- Redes -->
+          <div class="mt-5 flex items-center justify-center gap-6 text-gray-600">
+            <a href="#" aria-label="Facebook" class="hover:text-brandBlue transition">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M22.675 0h-21.35C.596 0 0 .597 0 1.333v21.334C0 23.403.596 24 1.325 24H12.82V14.708h-3.13v-3.62h3.13V8.413c0-3.1 1.894-4.788 4.66-4.788 1.324 0 2.463.099 2.794.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.765v2.316h3.59l-.467 3.62h-3.123V24h6.127C23.403 24 24 23.403 24 22.667V1.333C24 .597 23.403 0 22.675 0z" />
+              </svg>
+            </a>
+            <!-- Instagram legible -->
+            <a href="#" aria-label="Instagram" class="hover:text-brandBlue transition">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7z" />
+                <path
+                  d="M12 7.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5z" />
+                <circle cx="18" cy="6.5" r="1.1" />
+              </svg>
+            </a>
+            <a href="#" aria-label="X" class="hover:text-brandBlue transition">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
+          </div>
+          <!-- mismas secciones -->
+          <div class="mt-8 grid gap-10 md:grid-cols-2">
+            <section>
+              <h3 class="text-lg font-bold text-brandBlue flex items-center gap-2"><svg class="w-5 h-5"
+                  viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3z" />
+                </svg>Formación</h3>
+              <ul class="mt-3 space-y-2 text-[15px] text-gray-700">
+                <li>• Ciencias Políticas — UNC</li>
+                <li>• Didáctica y formación de formadores</li>
+                <li>• Gestión pública</li>
+              </ul>
+            </section>
+            <section>
+              <h3 class="text-lg font-bold text-brandBlue flex items-center gap-2"><svg class="w-5 h-5"
+                  viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M20 6h-2.5L16.4 4.9c-.3-.3-.6-.4-.9-.4h-7c-.3 0-.6.1-.9.4L6.5 6H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z" />
+                </svg>Experiencia</h3>
+              <ul class="mt-3 space-y-2 text-[15px] text-gray-700">
+                <li>• Diseño de trayectos formativos</li>
+                <li>• Seminarios y escuelas de líderes</li>
+                <li>• Tutorías y mentorías</li>
+              </ul>
+            </section>
+            <section class="md:col-span-2">
+              <h3 class="text-lg font-bold text-brandBlue flex items-center gap-2"><svg class="w-5 h-5"
+                  viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                </svg>Logros destacados</h3>
+              <ul class="mt-3 grid gap-y-2 gap-x-10 sm:grid-cols-2 text-[15px] text-gray-700">
+                <li>• 40 talleres dictados</li>
+                <li>• 1.200 jóvenes capacitados</li>
+                <li>• Publicación de materiales</li>
+                <li>• Red de instructores</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer / Scripts -->
+  <div id="app-footer"></div>
+</body>
+
+</html>

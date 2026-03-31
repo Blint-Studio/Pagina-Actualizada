@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JFC · Sumate</title>
+  <meta name="description"
+    content="Juventud del Frente Cívico · Construyendo el futuro de Córdoba. Participá · Proponé · Hacé que pase" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../../output.css">
+  <style>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px)
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
+
+    @keyframes scaleUp {
+      from {
+        transform: scale(.9);
+        opacity: 0
+      }
+
+      to {
+        transform: scale(1);
+        opacity: 1
+      }
+    }
+
+    .benefit-card,
+    .form-card {
+      transition: all .3s ease;
+      transform-style: preserve-3d;
+      position: relative
+    }
+
+    .benefit-card:hover,
+    .form-card:hover {
+      transform: translateY(-8px) rotateX(5deg);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, .15), 0 0 0 2px rgba(255, 90, 54, .2), 0 0 15px rgba(255, 90, 54, .25), 0 0 30px rgba(255, 90, 54, .15)
+    }
+
+    .benefit-icon {
+      transition: all .3s ease
+    }
+
+    .benefit-card:hover .benefit-icon {
+      transform: scale(1.1);
+      filter: brightness(1.2)
+    }
+
+    .modal-open {
+      overflow: hidden
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800 antialiased" data-root="../../">
+  <div id="app-header"></div>
+
+  <section class="py-16 sm:py-20 lg:py-24 animate-on-scroll" style="animation: fadeIn 1s ease-out;">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center animate-on-scroll" style="animation: fadeIn 1.2s ease-out;">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-brandBlue">
+          <span class="text-brandCoral">SUMATE AL</span> <span class="text-brandCyan">MOVIMIENTO</span>
+        </h2>
+        <p class="mt-2 text-gray-600">Tu generación tiene el poder de <span
+            class="text-brandCoral font-semibold">cambiar</span> Córdoba.
+          Sumate y formá parte de la <span class="text-brandCoral font-semibold">transformación</span> que nuestra
+          provincia necesita, con acciones concretas, y con integridad.
+        </p>
+      </div>
+
+      <div class="mt-10 grid gap-8 lg:grid-cols-2 animate-on-scroll" style="animation: fadeIn 1.4s ease-out;">
+        <div class="space-y-6">
+          <div class="animate-on-scroll" style="animation: fadeIn 1.3s ease-out;">
+            <h3 class="text-2xl font-bold text-brandBlue mb-2">¿Por qué sumarte?</h3>
+            <p class="text-gray-600 mb-6">Porque vas a encontrarte con lo siguiente:</p>
+          </div>
+          <div class="benefit-card rounded-2xl bg-white shadow-soft ring-1 ring-black/[0.04] p-5 animate-on-scroll"
+            style="animation: scaleUp 1.6s ease-out;">
+            <div class="flex gap-4">
+              <div class="grid h-12 w-12 place-items-center rounded-xl"><span class="benefit-icon text-2xl">👥</span>
+              </div>
+              <div>
+                <h3 class="font-semibold text-brandBlue">Red de Liderazgo</h3>
+                <p class="text-sm text-gray-600">Conectate con jóvenes líderes que están transformando la política
+                  cordobesa.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="benefit-card rounded-2xl bg-white shadow-soft ring-1 ring-black/[0.04] p-5 animate-on-scroll"
+            style="animation: scaleUp 1.8s ease-out;">
+            <div class="flex gap-4">
+              <div class="grid h-12 w-12 place-items-center rounded-xl"><span class="benefit-icon text-2xl">🎓</span>
+              </div>
+              <div>
+                <h3 class="font-semibold text-brandBlue">Formación Real</h3>
+                <p class="text-sm text-gray-600">Talleres y capacitaciones que te preparan para liderar el cambio.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="benefit-card rounded-2xl bg-white shadow-soft ring-1 ring-black/[0.04] p-5 animate-on-scroll"
+            style="animation: scaleUp 2.0s ease-out;">
+            <div class="flex gap-4">
+              <div class="grid h-12 w-12 place-items-center rounded-xl"><span class="benefit-icon text-2xl">🚀</span>
+              </div>
+              <div>
+                <h3 class="font-semibold text-brandBlue">Impacto Directo</h3>
+                <p class="text-sm text-gray-600">Participá en proyectos que generan cambios reales en la comunidad.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="benefit-card rounded-2xl bg-white shadow-soft ring-1 ring-black/[0.04] p-5 animate-on-scroll"
+            style="animation: scaleUp 2.2s ease-out;">
+            <div class="flex gap-4">
+              <div class="grid h-12 w-12 place-items-center rounded-xl"><span class="benefit-icon text-2xl">🏆</span>
+              </div>
+              <div>
+                <h3 class="font-semibold text-brandBlue">Crecimiento Personal</h3>
+                <p class="text-sm text-gray-600">Desarrollá habilidades de liderazgo y comunicación política.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="benefit-card rounded-2xl bg-white shadow-soft ring-1 ring-black/[0.04] p-5 animate-on-scroll"
+            style="animation: scaleUp 2.4s ease-out;">
+            <div class="flex gap-4">
+              <div class="grid h-12 w-12 place-items-center rounded-xl"><span class="benefit-icon text-2xl">❤️</span>
+              </div>
+              <div>
+                <h3 class="font-semibold text-brandBlue">Compromiso Social</h3>
+                <p class="text-sm text-gray-600">Uní tu pasión por el cambio social con acciones concretas para mejorar
+                  Córdoba.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="benefit-card rounded-2xl bg-white shadow-soft ring-1 ring-black/[0.04] p-5 animate-on-scroll"
+            style="animation: scaleUp 2.6s ease-out;">
+            <div class="flex gap-4">
+              <div class="grid h-12 w-12 place-items-center rounded-xl"><span class="benefit-icon text-2xl">📅</span>
+              </div>
+              <div>
+                <h3 class="font-semibold text-brandBlue">Agenda de Cambio</h3>
+                <p class="text-sm text-gray-600">Participá en la construcción de propuestas y proyectos que transforman
+                  nuestra ciudad.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FORMULARIO: sin action ni submit nativo -->
+        <div
+          class="form-card relative rounded-2xl shadow-soft ring-1 ring-black/[0.04] p-6 md:p-8 animate-on-scroll overflow-hidden"
+          style="animation: fadeIn 2s ease-out; background-image: url('../../assets/img/fondo-form.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+          <div class="absolute inset-0 bg-white/70 rounded-2xl"></div>
+          <div class="absolute inset-0 bg-[#5CBFDF]/10 backdrop-blur-sm rounded-2xl"></div>
+          <div class="relative bg-white/90 backdrop-blur-sm rounded-xl p-6">
+            <div class="text-center mb-6">
+              <h3 class="text-2xl font-bold text-brandBlue">¡Sumate ahora!</h3>
+              <p class="mt-2 text-gray-600">Completá el formulario y empezá a ser parte del cambio</p>
+            </div>
+
+            <!-- IMPORTANTE: sin action y sin method -->
+            <form id="joinForm" class="grid grid-cols-1 gap-4 sm:grid-cols-2" novalidate>
+              <div class="sm:col-span-2">
+                <label class="text-sm font-medium">Tu nombre y apellido *</label>
+                <input required type="text" name="nombre"
+                  class="mt-1 w-full rounded-lg border border-black/10 bg-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brandCyan" />
+              </div>
+              <div>
+                <label class="text-sm font-medium">Email *</label>
+                <input required type="email" name="email"
+                  class="mt-1 w-full rounded-lg border border-black/10 bg-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brandCyan" />
+              </div>
+              <div>
+                <label class="text-sm font-medium">Teléfono *</label>
+                <input required type="tel" name="telefono"
+                  class="mt-1 w-full rounded-lg border border-black/10 bg-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brandCyan" />
+              </div>
+              <div>
+                <label class="text-sm font-medium">Edad *</label>
+                <select required name="edad"
+                  class="mt-1 w-full rounded-lg border border-black/10 bg-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brandCyan">
+                  <option value="">Seleccioná</option>
+                  <option>16-17</option>
+                  <option>18-24</option>
+                  <option>25-29</option>
+                  <option>30+</option>
+                </select>
+              </div>
+              <div>
+                <label class="text-sm font-medium">Localidad *</label>
+                <input required type="text" name="localidad" list="localidades"
+                  class="mt-1 w-full rounded-lg border border-black/10 bg-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brandCyan"
+                  placeholder="Escribí tu localidad..." />
+                <datalist id="localidades">
+                  <option value="Cordoba Capital">
+                  <option value="Villa Carlos Paz">
+                  <option value="Rio Cuarto">
+                  <option value="San Francisco">
+                  <option value="Villa Maria">
+                  <option value="Alta Gracia">
+                  <option value="La Falda">
+                  <option value="Villa Dolores">
+                  <option value="Jesus Maria">
+                  <option value="Bell Ville">
+                  <option value="Marcos Juarez">
+                  <option value="Rio Tercero">
+                    <!-- … (resto de opciones iguales a tu versión) … -->
+                </datalist>
+              </div>
+              <div>
+                <label class="text-sm font-medium">Barrio *</label>
+                <input required type="text" name="barrio"
+                  class="mt-1 w-full rounded-lg border border-black/10 bg-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brandCyan"
+                  placeholder="Ingresá tu barrio" />
+              </div>
+              <div class="sm:col-span-2">
+                <label class="text-sm font-medium">¿Por qué querés sumarte?</label>
+                <textarea rows="4" name="motivo"
+                  class="mt-1 w-full rounded-lg border border-black/10 bg-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brandCyan"
+                  placeholder="Contanos qué te motiva a sumarte al cambio..."></textarea>
+              </div>
+              <div class="sm:col-span-2">
+                <!-- Botón manual (NO es submit) -->
+                <button id="joinSubmit" type="button"
+                  class="inline-flex items-center justify-center gap-2 rounded-full bg-brandCoral px-5 py-3 text-white font-semibold shadow-soft transition hover:brightness-110 w-full">
+                  Sumarme ahora
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 grid gap-6 text-center sm:grid-cols-2 lg:grid-cols-4">
+        <div>
+          <div class="text-3xl md:text-4xl font-extrabold text-brandBlue">500+</div>
+          <p class="mt-1 text-sm text-gray-600">Jóvenes Activos</p>
+        </div>
+        <div>
+          <div class="text-3xl md:text-4xl font-extrabold text-brandBlue">50+</div>
+          <p class="mt-1 text-sm text-gray-600">Localidades presentes</p>
+        </div>
+        <div>
+          <div class="text-3xl md:text-4xl font-extrabold text-brandBlue">25+</div>
+          <p class="mt-1 text-sm text-gray-600">Proyectos Activos</p>
+        </div>
+        <div>
+          <div class="text-3xl md:text-4xl font-extrabold text-brandBlue">8+</div>
+          <p class="mt-1 text-sm text-gray-600">Años Creciendo</p>
+        </div>
+      </div>
+
+      <div id="contacto" class="mt-12 rounded-2xl bg-white shadow-soft ring-1 ring-black/[0.04] p-6 md:p-8 text-center">
+        <h3 class="text-xl font-bold text-brandBlue">¿Tenés dudas sobre cómo participar?</h3>
+        <p class="mt-2 text-gray-600">Escribinos y te contamos todas las formas de sumarte al cambio.</p>
+        <div class="mt-5 flex flex-wrap items-center justify-center gap-3">
+          <a target="_blank"
+            href="https://wa.me/5493513362057?text=¡Hola!%20Me%20interesa%20conocer%20más%20sobre%20Juventud%20Frente%20Cívico%20y%20cómo%20puedo%20sumarme."
+            class="inline-flex items-center justify-center gap-2 rounded-full bg-brandCoral px-5 py-3 text-white font-semibold shadow-soft transition hover:brightness-110">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal de éxito -->
+  <div id="successModal" class="fixed inset-0 z-[100] hidden">
+    <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+    <div class="relative mx-auto mt-24 w-[92%] max-w-md rounded-2xl bg-white p-6 shadow-2xl ring-1 ring-black/10">
+      <div class="mx-auto mb-3 grid h-12 w-12 place-items-center rounded-full bg-green-100 text-2xl">✓</div>
+      <h3 class="text-xl font-semibold text-brandBlue text-center">¡Gracias por tu mensaje!</h3>
+      <p class="mt-2 text-center text-gray-600">Pronto nos pondremos en contacto con vos.</p>
+      <div class="mt-6 flex items-center justify-center gap-3">
+        <button id="successClose"
+          class="rounded-full bg-brandCoral px-5 py-2.5 text-white font-semibold hover:brightness-110">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="app-footer"></div>
+  <script src="../../assets/js/app.js"></script>
+  <script src="../../assets/js/sumate-form.js"></script>
+</body>
+
+</html>

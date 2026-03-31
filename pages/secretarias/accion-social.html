@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JFC · Secretaría de Acción Social</title>
+  <meta name="description" content="Secretaría de Acción Social - Coordinamos actividades con impacto social y construimos redes solidarias" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../output.css">
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    
+    .gallery-item {
+      aspect-ratio: 16/9;
+      background: #f3f4f6;
+      border-radius: 0.75rem;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="text-gray-800 antialiased" style="background-color: rgba(0, 31, 113, 0.05);" data-root="../../">
+  <div id="app-header"></div>
+  <!-- Hero Section -->
+  <section class="py-16 sm:py-20 lg:py-24" style="background-color: rgba(0, 31, 113, 0.05);">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      
+      <!-- Breadcrumb -->
+      <nav class="mb-8">
+        <a href="../../index.html" class="text-brandBlue hover:underline">← Volver al inicio</a>
+      </nav>
+
+      <!-- Header -->
+      <div class="text-center mb-16">
+        <span class="inline-flex items-center rounded-full px-4 py-2 text-sm font-medium bg-brandCoral/10 text-brandCoral mb-4">
+          Acción Social
+        </span>
+        <h1 class="text-4xl md:text-5xl font-extrabold text-brandBlue mb-6">
+          Secretaría de<br>
+          <span class="text-brandCoral">Acción Social</span>
+        </h1>
+        <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+          Coordinamos actividades con impacto social, construyendo redes entre jóvenes en situación de vulnerabilidad y oportunidades de desarrollo.
+        </p>
+      </div>
+
+      <!-- Información Principal -->
+      <div class="grid gap-12 lg:grid-cols-2 mb-16">
+        
+        <!-- Descripción -->
+        <div class="bg-white rounded-2xl p-8 shadow-soft">
+          <h2 class="text-2xl font-bold text-brandBlue mb-6">¿Qué hacemos?</h2>
+          <div class="space-y-4 text-gray-700">
+            <p>
+              Nuestra secretaría se dedica a desarrollar y ejecutar proyectos que generen un impacto social positivo y duradero en las comunidades más vulnerables de Córdoba.
+            </p>
+            <p>
+              Trabajamos directamente con organizaciones sociales, comedores comunitarios y centros de desarrollo para crear puentes de solidaridad y oportunidades.
+            </p>
+            <ul class="list-disc list-inside space-y-2 text-sm">
+              <li>Voluntariado en comedores y merenderos comunitarios</li>
+              <li>Programas de apoyo escolar y tutorías</li>
+              <li>Campañas de recolección de alimentos y ropa</li>
+              <li>Talleres de oficios y capacitación laboral</li>
+              <li>Actividades recreativas para niños y adolescentes</li>
+              <li>Proyectos de desarrollo comunitario</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Datos de Impacto -->
+        <div class="bg-white rounded-2xl p-8 shadow-soft">
+          <h2 class="text-2xl font-bold text-brandBlue mb-6">Nuestro Impacto</h2>
+          <div class="grid gap-6 sm:grid-cols-2">
+            <div class="text-center">
+              <div class="text-3xl font-bold text-brandCoral mb-2">12</div>
+              <p class="text-sm text-gray-600">Comedores Asistidos</p>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-brandCyan mb-2">800+</div>
+              <p class="text-sm text-gray-600">Niños Beneficiados</p>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-brandBlue mb-2">150+</div>
+              <p class="text-sm text-gray-600">Voluntarios Activos</p>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-grayMid mb-2">25+</div>
+              <p class="text-sm text-gray-600">Proyectos Ejecutados</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Equipo de Trabajo -->
+      <div class="bg-white rounded-2xl p-8 shadow-soft mb-16">
+        <h2 class="text-2xl font-bold text-brandBlue mb-8 text-center">Nuestro Equipo</h2>
+        
+        <div class="grid gap-8 md:grid-cols-3">
+          
+          <!-- Secretaria -->
+          <div class="text-center">
+            <div class="w-24 h-24 bg-gradient-to-r from-brandCoral to-red-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+              <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-brandBlue mb-1">Secretaria de Acción Social</h3>
+            <p class="text-sm text-gray-600 mb-2">Nombre Apellido</p>
+            <p class="text-xs text-gray-500">Lic. en Trabajo Social | Gestión Comunitaria</p>
+          </div>
+
+          <!-- Coordinadora de Voluntariado -->
+          <div class="text-center">
+            <div class="w-24 h-24 bg-gradient-to-r from-brandCyan to-blue-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+              <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-brandBlue mb-1">Coordinadora de Voluntariado</h3>
+            <p class="text-sm text-gray-600 mb-2">Nombre Apellido</p>
+            <p class="text-xs text-gray-500">Psicología Social | Liderazgo Comunitario</p>
+          </div>
+
+          <!-- Coordinador de Proyectos -->
+          <div class="text-center">
+            <div class="w-24 h-24 bg-gradient-to-r from-brandBlue to-purple-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+              <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-brandBlue mb-1">Coordinador de Proyectos</h3>
+            <p class="text-sm text-gray-600 mb-2">Nombre Apellido</p>
+            <p class="text-xs text-gray-500">Gestión de Proyectos | Desarrollo Social</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Logros Destacados -->
+      <div class="bg-white rounded-2xl p-8 shadow-soft mb-16">
+        <h2 class="text-2xl font-bold text-brandBlue mb-8">Logros Destacados</h2>
+        
+        <div class="space-y-6">
+          <div class="border-l-4 border-brandCoral pl-4">
+            <h3 class="font-bold text-brandBlue mb-2">Programa "Manos Solidarias"</h3>
+            <p class="text-gray-700 text-sm mb-2">Red de voluntarios que asiste semanalmente a 12 comedores comunitarios en diferentes barrios de Córdoba.</p>
+            <span class="text-xs text-gray-500">2023-2024 - 800+ niños beneficiados</span>
+          </div>
+          
+          <div class="border-l-4 border-brandCyan pl-4">
+            <h3 class="font-bold text-brandBlue mb-2">Campaña "Abrigo Solidario"</h3>
+            <p class="text-gray-700 text-sm mb-2">Recolección y distribución de ropa de abrigo durante el invierno 2024.</p>
+            <span class="text-xs text-gray-500">2024 - 2.000+ prendas distribuidas</span>
+          </div>
+          
+          <div class="border-l-4 border-brandBlue pl-4">
+            <h3 class="font-bold text-brandBlue mb-2">Escuela de Oficios "Futuro Joven"</h3>
+            <p class="text-gray-700 text-sm mb-2">Talleres gratuitos de electricidad, plomería y costura para jóvenes de 16 a 25 años.</p>
+            <span class="text-xs text-gray-500">2024 - 80+ jóvenes capacitados</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Galería de Fotos -->
+      <div class="bg-white rounded-2xl p-8 shadow-soft mb-16">
+        <h2 class="text-2xl font-bold text-brandBlue mb-8">Galería de Actividades</h2>
+        
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <div class="w-full h-full bg-gray-300 flex items-center justify-center">
+              <span class="text-gray-600 text-sm">Voluntariado Comedor</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="w-full h-full bg-gray-300 flex items-center justify-center">
+              <span class="text-gray-600 text-sm">Taller de Oficios</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="w-full h-full bg-gray-300 flex items-center justify-center">
+              <span class="text-gray-600 text-sm">Campaña de Ropa</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="w-full h-full bg-gray-300 flex items-center justify-center">
+              <span class="text-gray-600 text-sm">Apoyo Escolar</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="w-full h-full bg-gray-300 flex items-center justify-center">
+              <span class="text-gray-600 text-sm">Actividades Recreativas</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="w-full h-full bg-gray-300 flex items-center justify-center">
+              <span class="text-gray-600 text-sm">Equipo en Terreno</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call to Action -->
+      <div class="text-center">
+        <h3 class="text-2xl font-bold text-brandBlue mb-4">¿Te interesa unirte?</h3>
+        <p class="text-gray-700 mb-6">Sumate a nuestro equipo y ayudanos a construir una sociedad más justa</p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <button class="bg-brandCoral text-white font-semibold py-3 px-6 rounded-full hover:brightness-110 transition">
+            Quiero ser voluntario
+          </button>
+          <button class="border border-brandBlue text-brandBlue font-semibold py-3 px-6 rounded-full hover:bg-brandBlue hover:text-white transition">
+            Conocer proyectos
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="app-footer"></div>
+  <script src="../../assets/js/app.js"></script>
+</body>
+</html>

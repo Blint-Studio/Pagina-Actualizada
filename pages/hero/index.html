@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JFC · Hero</title>
+  <meta name="description"
+    content="Juventud del Frente Cívico · Construyendo el futuro de Córdoba. Participá · Proponé · Hacé que pase" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../../output.css">
+
+  <style>
+    .hero-bg {
+      background: radial-gradient(1200px 600px at 10% 10%, rgba(255, 90, 54, 0.20), transparent 60%), radial-gradient(900px 500px at 85% 30%, rgba(92, 191, 223, 0.20), transparent 60%), linear-gradient(105deg, #001F71 0%, #1F4FD1 35%, #27A0D5 55%, #FF5A36 100%);
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-15px);
+      }
+      60% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .bounce-btn {
+      animation: bounce 2s infinite;
+    }
+
+    .bounce-btn:hover {
+      animation: none;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800 antialiased" data-root="../../">
+  <div id="app-header"></div>
+
+  <section class="relative min-h-screen">
+    <div class="hero-bg min-h-screen">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 min-h-screen flex flex-col justify-center text-center text-white">
+        <div class="mx-auto inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1 ring-1 ring-white/20">
+          <span class="h-2 w-2 rounded-full bg-brandCoral"></span>
+          <span class="text-xs font-semibold tracking-widest uppercase">Jóvenes Frente Cívico</span>
+        </div>
+        <h1 class="mt-6 text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight">
+          JUVENTUD DEL
+          <span class="block"><span class="text-brandCoral">FRENTE</span> <span
+              class="text-brandCyan">CÍVICO</span></span>
+        </h1>
+        <p class="mx-auto mt-6 max-w-3xl text-base sm:text-lg md:text-xl text-white/90">
+          Acá no se rinde nadie. <span class="font-semibold text-brandCoral">Jóvenes con Juez</span>
+          construyendo el futuro de <span class="font-semibold text-brandCyan">Córdoba</span>.
+        </p>
+        <div class="mt-12 flex flex-wrap items-center justify-center gap-4">
+          <a href="#landing-sumate"
+            class="bounce-btn inline-flex items-center justify-center gap-2 rounded-full bg-brandCoral px-5 py-3 text-white font-semibold shadow-soft transition hover:brightness-110 nav-link">Sumate
+            al cambio</a>
+          <a href="#landing-quienes"
+            class="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 bg-white/10 px-5 py-3 text-white font-semibold transition hover:bg-white hover:text-brandBlue nav-link">Conocé
+            Más</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="app-footer"></div>
+  <script src="../../assets/js/app.js"></script>
+</body>
+
+</html>

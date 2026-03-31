@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JFC · Secretaría de Acción Digital</title>
+  <meta name="description" content="Secretaría de Acción Digital - Implementamos soluciones digitales para modernizar la participación juvenil" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../dist/output.css">
+  <link rel="stylesheet" href="../../output.css">
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    
+    .gallery-item {
+      aspect-ratio: 16/9;
+      background: #f3f4f6;
+      border-radius: 0.75rem;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="text-gray-800 antialiased" style="background-color: rgba(0, 31, 113, 0.05);" data-root="../../">
+  <div id="app-header"></div>
+  <!-- Hero Section -->
+  <section class="py-16 sm:py-20 lg:py-24" style="background-color: rgba(0, 31, 113, 0.05);">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      
+      <!-- Breadcrumb -->
+      <nav class="mb-8">
+        <a href="../../index.html" class="text-brandBlue hover:underline">← Volver al inicio</a>
+      </nav>
+
+      <!-- Header -->
+      <div class="text-center mb-16">
+        <span class="inline-flex items-center rounded-full px-4 py-2 text-sm font-medium bg-brandCoral/10 text-brandCoral mb-4">
+          Acción Digital
+        </span>
+        <h1 class="text-4xl md:text-5xl font-extrabold text-brandBlue mb-6">
+          Secretaría de<br>
+          <span class="text-brandCoral">Acción Digital</span>
+        </h1>
+        <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+          Implementamos soluciones digitales para modernizar la participación juvenil y el activismo político efectivo en toda la provincia de Córdoba.
+        </p>
+      </div>
+
+      <!-- Información Principal -->
+      <div class="grid gap-12 lg:grid-cols-2 mb-16">
+        
+        <!-- Descripción -->
+        <div class="bg-white rounded-2xl p-8 shadow-soft">
+          <h2 class="text-2xl font-bold text-brandBlue mb-6">¿Qué hacemos?</h2>
+          <div class="space-y-4 text-gray-700">
+            <p>
+              Nuestra secretaría se enfoca en desarrollar e implementar estrategias digitales que permitan una mayor participación de los jóvenes en la política cordobesa.
+            </p>
+            <p>
+              Trabajamos con tecnologías emergentes, plataformas digitales y herramientas de comunicación moderna para crear puentes entre la juventud y las instituciones políticas.
+            </p>
+            <ul class="list-disc list-inside space-y-2 text-sm">
+              <li>Desarrollo de aplicaciones móviles para participación ciudadana</li>
+              <li>Gestión de redes sociales y contenido digital</li>
+              <li>Capacitaciones en competencias digitales</li>
+              <li>Análisis de datos para políticas públicas</li>
+              <li>Innovación en procesos organizacionales</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Datos de Impacto -->
+        <div class="bg-white rounded-2xl p-8 shadow-soft">
+          <h2 class="text-2xl font-bold text-brandBlue mb-6">Nuestro Impacto</h2>
+          <div class="grid gap-6 sm:grid-cols-2">
+            <div class="text-center">
+              <div class="text-3xl font-bold text-brandCoral mb-2">15+</div>
+              <p class="text-sm text-gray-600">Proyectos Digitales</p>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-brandCyan mb-2">500+</div>
+              <p class="text-sm text-gray-600">Jóvenes Capacitados</p>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-brandBlue mb-2">8</div>
+              <p class="text-sm text-gray-600">Aplicaciones Desarrolladas</p>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-grayMid mb-2">25+</div>
+              <p class="text-sm text-gray-600">Talleres Realizados</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Equipo de Trabajo -->
+      <div class="bg-white rounded-2xl p-8 shadow-soft mb-16">
+        <h2 class="text-2xl font-bold text-brandBlue mb-8 text-center">Nuestro Equipo</h2>
+        
+        <div class="grid gap-8 md:grid-cols-3">
+          
+          <!-- Secretario -->
+          <div class="text-center">
+            <div class="w-24 h-24 bg-gradient-to-r from-brandCoral to-orange-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+              <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-brandBlue mb-1">Secretario de Acción Digital</h3>
+            <p class="text-sm text-gray-600 mb-2">Nombre Apellido</p>
+            <p class="text-xs text-gray-500">Ing. en Sistemas | Especialista en UX/UI</p>
+          </div>
+
+          <!-- Coordinador de Desarrollo -->
+          <div class="text-center">
+            <div class="w-24 h-24 bg-gradient-to-r from-brandCyan to-blue-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+              <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-brandBlue mb-1">Coordinador de Desarrollo</h3>
+            <p class="text-sm text-gray-600 mb-2">Nombre Apellido</p>
+            <p class="text-xs text-gray-500">Desarrollador Full Stack | Scrum Master</p>
+          </div>
+
+          <!-- Coordinadora de Contenidos -->
+          <div class="text-center">
+            <div class="w-24 h-24 bg-gradient-to-r from-brandBlue to-purple-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+              <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-brandBlue mb-1">Coordinadora de Contenidos</h3>
+            <p class="text-sm text-gray-600 mb-2">Nombre Apellido</p>
+            <p class="text-xs text-gray-500">Lic. en Comunicación | Content Strategy</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Logros Destacados -->
+      <div class="bg-white rounded-2xl p-8 shadow-soft mb-16">
+        <h2 class="text-2xl font-bold text-brandBlue mb-8">Logros Destacados</h2>
+        
+        <div class="space-y-6">
+          <div class="border-l-4 border-brandCoral pl-4">
+            <h3 class="font-bold text-brandBlue mb-2">Plataforma "Participa Córdoba"</h3>
+            <p class="text-gray-700 text-sm mb-2">Aplicación móvil que permite a los jóvenes participar en consultas ciudadanas y proponer iniciativas.</p>
+            <span class="text-xs text-gray-500">2024 - 2.500+ usuarios activos</span>
+          </div>
+          
+          <div class="border-l-4 border-brandCyan pl-4">
+            <h3 class="font-bold text-brandBlue mb-2">Programa "Jóvenes Digitales"</h3>
+            <p class="text-gray-700 text-sm mb-2">Capacitaciones gratuitas en programación, diseño y marketing digital para jóvenes de 16 a 25 años.</p>
+            <span class="text-xs text-gray-500">2023-2024 - 300+ jóvenes capacitados</span>
+          </div>
+          
+          <div class="border-l-4 border-brandBlue pl-4">
+            <h3 class="font-bold text-brandBlue mb-2">Sistema de Gestión Interna</h3>
+            <p class="text-gray-700 text-sm mb-2">Desarrollo de plataforma propia para gestión de miembros, eventos y proyectos del JFC.</p>
+            <span class="text-xs text-gray-500">2024 - Implementación exitosa</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Galería de Fotos -->
+      <div class="bg-white rounded-2xl p-8 shadow-soft mb-16">
+        <h2 class="text-2xl font-bold text-brandBlue mb-8">Galería de Actividades</h2>
+        
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <div class="w-full h-full bg-gray-300 flex items-center justify-center">
+              <span class="text-gray-600 text-sm">Taller de Programación</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="w-full h-full bg-gray-300 flex items-center justify-center">
+              <span class="text-gray-600 text-sm">Hackathon Juvenil</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="w-full h-full bg-gray-300 flex items-center justify-center">
+              <span class="text-gray-600 text-sm">Lanzamiento App</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="w-full h-full bg-gray-300 flex items-center justify-center">
+              <span class="text-gray-600 text-sm">Capacitación UX/UI</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="w-full h-full bg-gray-300 flex items-center justify-center">
+              <span class="text-gray-600 text-sm">Trabajo en Equipo</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="w-full h-full bg-gray-300 flex items-center justify-center">
+              <span class="text-gray-600 text-sm">Evento Digital</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call to Action -->
+      <div class="text-center">
+        <h3 class="text-2xl font-bold text-brandBlue mb-4">¿Te interesa unirte?</h3>
+        <p class="text-gray-700 mb-6">Sumate a nuestro equipo y ayudanos a modernizar la participación política juvenil</p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <button class="bg-brandCoral text-white font-semibold py-3 px-6 rounded-full hover:brightness-110 transition">
+            Quiero formar parte
+          </button>
+          <button class="border border-brandBlue text-brandBlue font-semibold py-3 px-6 rounded-full hover:bg-brandBlue hover:text-white transition">
+            Conocer más proyectos
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="app-footer"></div>
+  <script src="../../assets/js/app.js"></script>
+</body>
+</html>
